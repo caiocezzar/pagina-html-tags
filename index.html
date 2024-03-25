@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primeiros passos com HTML</title>
+  </head>
+  <body>
+    <h1 id="top">Apredendo HTML na prática</h1>
+    <hr>
+    <ul>
+      <li><a href="#item1">Ferramentas utilizadas</a></li>
+      <li><a href="#item2">Usando o Inspetor de Elementos</a></li>
+      <li><a href="#item3">Estrutura básica do HTML</a></li>
+      <li><a href="#item4">Falando sobre Tags</a></li>
+      <li><a href="#item5">Atributos básicos</a></li>
+      <li><a href="#item6">Executando uma página HTML</a></li>
+      <li><a href="#item7">Textos</a></li>
+      <li><a href="#item8">Listas ordenadas e não ordenadas</a></li>
+      <li><a href="#item9">Links</a></li>
+    </ul>
+
+    <h2>Objetivo Geral</h2>
+    <p>
+      Aprender a instalar e configurar o ambiente de desenvolvimento. Entender o
+      funcionamento do inspetor de elementos do navegador e criar sua primeira
+      página HTML.
+    </p>
+    <h3 id="item1">Ferramentas utilizadas</h3>
+    <h4>Melhores Editores HTML Gratuitos</h4>
+    <ul>
+      <li>Notepad++</li>
+      <li>Sublime Text.</li>
+      <li>Visual Studio Code</li>
+      <li>Adobe Dreamweaver CC.</li>
+      <li>Froala.</li>
+      <li>CoffeeCup.</li>
+    </ul>
+
+    <h3 id="item2">Usando o Inspetor de Elementos</h3>
+    <p>
+      Se você trabalha com muitos sites, provavelmente, está sempre em busca de
+      maneiras mais rápidas e eficientes de fazer as coisas. Nesse caso, a
+      ferramenta para inspecionar elemento, disponível na maioria dos principais
+      navegadores, pode ser um recurso útil para ter em mãos. Com ela, você pode
+      identificar rapidamente as classes CSS, visualizar alterações em elementos
+      de uma página, simular um site em dispositivos móveis e muito mais. Neste
+      artigo, vamos apresentar a ferramenta de inspecionar e, ainda, ensinar
+      como acessá-la nos navegadores web mais populares. Veja, a seguir, como
+      você pode usá-la como parte de seu fluxo de trabalho de desenvolvimento
+      web.
+    </p>
+    <h4>O que é a ferramenta de inspecionar elemento?</h4>
+    <p>
+      A ferramenta de inspecionar elemento é um utilitário que permite
+      visualizar o código-fonte subjacente de qualquer página web. Além disso,
+      você pode usá-la para fazer alterações temporárias e ver os resultados em
+      tempo real, deixando o código-fonte original intacto. Isso é extremamente
+      útil se você precisa testar uma alteração ou diagnosticar um problema.
+      Também pode ser de grande valia se você encontrar um site com um recurso
+      de que goste e estiver curioso para saber como ele foi implementado. A
+      maioria dos principais navegadores, incluindo Chrome, Firefox e Safari,
+      oferece algumas variações dessa ferramenta. Vamos ver como acessá-la em
+      cada um deles.
+    </p>
+    <h4>Como inspecionar elemento no Chrome?</h4>
+    <p>
+      Existem três maneiras de como<strong
+        >inspecionar elemento no Chrome.</strong
+      >
+    </p>
+    <ul>
+      <li>
+        Clique com o botão direito em um item da página e escolha Inspecionar;
+      </li>
+    </ul>
+
+    <h3 id="item3">Estrututa básica do HTML</h3>
+    <p>
+      O documento HTML sempre inicia com o que chamamos de estrutura básica.
+      Esta estrutura é quase que imutável. Sempre será dessa forma e você
+      sempre, sempre começará seu HTML começando por esse código. Geralmente os
+      editores como o Sublime Text já tem atalhos para iniciar os documentos
+      HTMLs com essa estrutura, logo, você não precisa se preocupar em
+      decorá-la, mas é bom que faça. Veja abaixo como ela se inicia:
+    </p>
+    <img src="img/html-hierarchy.png" alt="" width="450"/>
+    <h3 id="item4">Falando sobre Tags</h3>
+    <p>
+      /As tags são usadas para informar ao navegador a estrutura do site. Ou
+      seja: quando se escreve um código em HTML, as tags serão interpretadas
+      pelo navegador, produzindo assim a estrutura e o conteúdo visual da
+      página. A principal característica das tags é estarem sempre dentro dos
+      sinais de chevron (sinal de “maior que” e “menor que”), ou seja: < >. As
+      tags HTML são divididas em dois tipos: as que precisam de fechamento e as
+      que não precisam de fechamento. As tags que precisam de fechamento possuem
+      a sintaxe <code><tag> </tag></code>, já as que não precisam de fechamento
+      possuem como estrutura <tag />. Além disso, uma mesma tag pode receber um
+      ou mais atributos, que possuirá um valor que modifica sua estrutura ou
+      funcionalidade.
+    </p>
+    <h3 id="item5">Atributos básicos</h3>
+    <p>
+      Os atributos são usados para personalizar as tags, modificando sua
+      estrutura ou funcionalidade. Igualmente, os atributos são utilizados para
+      atribuir uma classe ou id a um elemento. A maioria das tags tem seus
+      próprios atributos. Contudo, existem alguns atributos genéricos que podem
+      ser utilizados na maioria das tags HTML, vamos estudá-los:
+    </p>
+    <ul>
+      <li>
+        <strong>class=”…“</strong> – Atribui uma classe ao elemento (uma classe
+        pode ser utilizada para um ou mais elementos);
+      </li>
+      <li>
+        <strong>id=”…“</strong> – Atribui um id ao elemento (um id deve ser
+        único, ou seja atribuído a um único elemento);
+      </li>
+      <li>
+        <strong>style=”…”</strong> – Permite incluir elementos CSS (estilos)
+        dentro da tag;
+      </li>
+      <li>
+        <strong>lang=”…”</strong> – Define o idioma principal do elemento;
+      </li>
+      <li><strong>title=”…”</strong> – Define o título do elemento;</li>
+      <li>
+        <strong>alt=”…”</strong> – Define um texto alternativo e, por isso, é
+        muito utilizado em imagens, auxilia nas práticas de SEO;
+      </li>
+      <li><strong>hidden</strong> – Oculta o elemento;</li>
+      <li>
+        <strong>align=”…”</strong> – Permite definir o padrão de alinhamento
+        desse elemento, como por exemplo: right, center, left e justify;
+      </li>
+      <li><strong>width=”…”</strong> – Define uma largura para o elemento;</li>
+      <li><strong>height=”…”</strong> – Define uma altura para o elemento.</li>
+    </ul>
+
+    <h3 id="item6">Executando uma página HTML</h3>    
+    <ol>
+      <li>Abra o seu editor de texto e crie um novo arquivo.</li>
+      <li>Digite o código HTML em seu arquivo.</li>
+      <li>Salve o arquivo com a extensão (.html).</li>
+      <li>Abra o navegador da web de sua escolha.</li>
+      <li>
+        No navegador, abra o arquivo HTML clicando em “Arquivo” e selecionando
+        “Abrir arquivo” ou arrastando e soltando o arquivo HTML na janela do
+        navegador.
+      </li>
+    </ol>
+
+    <h3 id="item7">Textos</h3>
+    <p>// h1, h2, h3, h4, h5, p, i, u, strong, entre outros</p>
+    <h3 id="item8">Listas ordenadas e não ordenadas</h3>
+    <p>
+      Uma lista ordenada é delimitada pelas etiquetas <code><</code>ol<code
+        >></code
+      >
+      e <code><</code>/ol<code>></code> (Ordered List). Cada item da lista é
+      delimitado pelas etiquetas <code><</code>li<code>></code> e
+      <code><</code>/li<code>></code> (List Item).
+    </p>
+    <p>
+      A estrutura da lista não-ordenada é semelhante a da lista ordenada -
+      porém, ao invés de ser construída com o elemento OL, é construída com o
+      elemento UL (Unordered List).
+    </p>
+    <h3 id="item9">Links</h3>
+    <ul>
+      <li>
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+          target="_blank"
+          >Mozilla Documentation</a
+        >
+      </li>
+      <li>
+        <a href="https://www.w3schools.com/" target="_blank">W3 Schools</a>
+      </li>
+      <li>
+        <a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a>
+      </li>
+      <li>
+        <a href="https://code.visualstudio.com/" target="_blank">VS Code</a>
+      </li>
+      <li><a href="https://www.dio.me/" target="_blank">DIO | Me</a></li>
+    </ul>
+  </body>
+  <small><a href="#top">Voltar</a></small>
+</html>
